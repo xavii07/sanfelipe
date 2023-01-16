@@ -1,0 +1,62 @@
+---
+import Aside from "../components/Aside.astro";
+import CardBodega from "../components/CardBodega.astro";
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Search from "../components/Search.astro";
+import { bodegas } from "../../db/boodegas.json";
+---
+
+<Layout title="San Felipe | Bodegas">
+  <div class="container-fluid vh-100">
+    <div class="row h-100">
+      <div class="col-2 aside">
+        <Aside />
+      </div>
+      <div class="col-10 main">
+        <Nav />
+        <div class="container">
+          <h1 class="text-center py-4">Bodegas</h1>
+          <div class="row my-4">
+            <div class="col-4">
+              <Search placeholder="Buscar Bodega" />
+            </div>
+            <div class="col-8 d-flex h-100 justify-content-end">
+              <a href="/bodega_nuevo" class="btn boton">Agregar Nuevo +</a>
+            </div>
+            <div class="row mx-auto mt-4 justify-content-center gap-3">
+              {
+                bodegas.map((bodega) => (
+                  <CardBodega
+                    atencion_fin={bodega.atencion_fin}
+                    atencion_semana={bodega.atencion_semana}
+                    ciudad={bodega.ciudad}
+                    direccion={bodega.direccion}
+                    id={bodega.id}
+                    imagen={bodega.imagen}
+                    nombre={bodega.nombre}
+                    telefono={bodega.telefono}
+                  />
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .aside {
+        background-color: #232a2c;
+      }
+      .boton {
+        background-color: #e94256;
+        color: aliceblue;
+        font-weight: 700;
+      }
+      .boton:hover {
+        background-color: #e94255c0;
+      }
+    </style>
+  </div>
+</Layout>

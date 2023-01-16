@@ -1,0 +1,121 @@
+---
+interface Props {
+  nombre?: string;
+  ciudad?: string;
+  telefono?: string;
+  direccion?: string;
+  imagen?: string;
+  atencion_semana?: string;
+  atencion_fin?: string;
+  boton?: string;
+}
+
+const {
+  nombre,
+  telefono,
+  ciudad,
+  direccion,
+  atencion_fin,
+  atencion_semana,
+  imagen,
+  boton = "Guardar Bodega",
+} = Astro.props;
+---
+
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label">Nombre Bodega</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationCustom01"
+      placeholder="La Matriz"
+      autocomplete="off"
+      value={nombre}
+      required
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Ciudad</label>
+    <input
+      autocomplete="off"
+      type="text"
+      class="form-control"
+      id="validationCustom02"
+      placeholder="Latacunga"
+      value={ciudad}
+      required
+    />
+  </div>
+  <div class="col-md-12">
+    <label for="validationCustom03" class="form-label">Direccion</label>
+    <input
+      autocomplete="off"
+      type="text"
+      class="form-control"
+      id="validationCustom03"
+      value={direccion}
+      required
+    />
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom04" class="form-label"
+      >Atencion Lunes - Sabado</label
+    >
+    <input
+      type="time"
+      class="form-control"
+      id="validationCustom05"
+      required
+      value={atencion_semana}
+    />
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom05" class="form-label"
+      >Atencion Domingos Fer</label
+    >
+    <input
+      type="time"
+      class="form-control"
+      id="validationCustom05"
+      required
+      value={atencion_fin}
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label">Telefono</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationCustom01"
+      placeholder="2716-0000"
+      autocomplete="off"
+      value={telefono}
+      required
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Imagen</label>
+    <input
+      type="file"
+      value={imagen}
+      class="form-control"
+      id="validationCustom02"
+      required
+    />
+  </div>
+  <div class="col-8 mt-4">
+    <a href="/bodegas" class="btn boton w-100 mt-4" type="submit">{boton}</a>
+  </div>
+</form>
+
+<style>
+  .boton {
+    background-color: #e94256;
+    color: aliceblue;
+    font-weight: 700;
+  }
+  .boton:hover {
+    background-color: #e94255c0;
+  }
+</style>

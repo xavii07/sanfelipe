@@ -1,0 +1,121 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "codigo": "PRO3265",
+            "nombre": "Lampara de mesa",
+            "descripcion": "Lampara de mesa de madera",
+            "cantidad": 10,
+            "precio_unitario": 50,
+            "precio_total": 500
+        },
+        {
+            "id": 2,
+            "codigo": "PRO3266",
+            "nombre": "Lampara de pie",
+            "descripcion": "Lampara de pie de madera",
+            "cantidad": 5,
+            "precio_unitario": 100,
+            "precio_total": 500
+        },
+        {
+            "id": 3,
+            "codigo": "PRO3267",
+            "nombre": "Lampara de techo",
+            "descripcion": "Lampara de techo de madera",
+            "cantidad": 2,
+            "precio_unitario": 200,
+            "precio_total": 400
+        },
+        {
+            "id": 4,
+            "codigo": "PRO3268",
+            "nombre": "Lampara de pared",
+            "descripcion": "Lampara de pared de madera",
+            "cantidad": 1,
+            "precio_unitario": 300,
+            "precio_total": 300
+        },
+        {
+            "id": 5,
+            "codigo": "PRO3269",
+            "nombre": "Lampara de escritorio",
+            "descripcion": "Lampara de escritorio de madera",
+            "cantidad": 3,
+            "precio_unitario": 400,
+            "precio_total": 1200
+        },
+        {
+            "id": 6,
+            "codigo": "PRO3270",
+            "nombre": "Lampara de mesa",
+            "descripcion": "Lampara de mesa de madera",
+            "cantidad": 10,
+            "precio_unitario": 50,
+            "precio_total": 500
+        },
+        {
+            "id": 7,
+            "codigo": "PRO3271",
+            "nombre": "Lampara de pie",
+            "descripcion": "Lampara de pie de madera",
+            "cantidad": 5,
+            "precio_unitario": 100,
+            "precio_total": 500
+        },
+        {
+            "id": 8,
+            "codigo": "PRO3272",
+            "nombre": "Lampara de techo",
+            "descripcion": "Lampara de techo de madera",
+            "cantidad": 2,
+            "precio_unitario": 200,
+            "precio_total": 400
+        },
+        {
+            "id": 9,
+            "codigo": "PRO3273",
+            "nombre": "Lampara de pared",
+            "descripcion": "Lampara de pared de madera",
+            "cantidad": 1,
+            "precio_unitario": 300,
+            "precio_total": 300
+        },
+        {
+            "id": 10,
+            "codigo": "PRO3274",
+            "nombre": "Lampara de escritorio",
+            "descripcion": "Lampara de escritorio de madera",
+            "cantidad": 3,
+            "precio_unitario": 400,
+            "precio_total": 1200
+        },
+        {
+            "id": 11,
+            "codigo": "PRO3275",
+            "nombre": "Lampara de mesa",
+            "descripcion": "Lampara de mesa de madera",
+            "cantidad": 10,
+            "precio_unitario": 50,
+            "precio_total": 500
+        },
+        {
+            "id": 12,
+            "codigo": "PRO3276",
+            "nombre": "Lampara de pie",
+            "descripcion": "Lampara de pie de madera",
+            "cantidad": 5,
+            "precio_unitario": 100,
+            "precio_total": 500
+        },
+        {
+            "id": 13,
+            "codigo": "PRO3226",
+            "nombre": "Tomacorriente",
+            "descripcion": "Tomacorriente de 1 polo",
+            "cantidad": 500,
+            "precio_unitario": 1,
+            "precio_total": 500
+        }
+    ]
+}

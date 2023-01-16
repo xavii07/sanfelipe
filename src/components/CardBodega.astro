@@ -1,0 +1,59 @@
+---
+interface Props {
+  id: number;
+  nombre: string;
+  ciudad: string;
+  telefono: string;
+  direccion: string;
+  imagen: string;
+  atencion_semana: string;
+  atencion_fin: string;
+}
+const {
+  atencion_fin,
+  atencion_semana,
+  ciudad,
+  direccion,
+  id,
+  imagen,
+  nombre,
+  telefono,
+} = Astro.props;
+---
+
+<div class="card bg-dark mb-4" style="max-width: 19rem;">
+  <div class="card-body">
+    <h5 class="card-title">{ciudad} - {nombre}</h5>
+    <small class="card-text">
+      {direccion}
+    </small>
+  </div>
+  <img
+    src={imagen}
+    class="card-img-top object-fit-cover"
+    style="height: 200px;"
+    alt={nombre}
+  />
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item d-flex justify-content-between">
+      <p>
+        {telefono}
+      </p>
+      <div class="d-flex gap-2">
+        <i class="bi bi-whatsapp" style="color: green;"></i>
+        <i class="bi bi-telephone-fill" style="color:purple;"></i>
+      </div>
+    </li>
+
+    <li class="list-group-item fw-bold">
+      <small
+        >Lunes a Sábado de: <spam class="fw-normal">{atencion_semana}</spam>
+      </small>
+    </li>
+    <li class="list-group-item fw-bold">
+      <small
+        >Domingos y Feriados de: <spam class="fw-normal">{atencion_fin}</spam>
+      </small>
+    </li>
+  </ul>
+</div>

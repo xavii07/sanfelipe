@@ -1,0 +1,180 @@
+{
+    "provedores": [
+        {
+            "id": 1,
+            "nombre": "A.O. Smith",
+            "ciudad": "Guayaquil",
+            "telefono": "18003524",
+            "imagen": "../public/marcas/logo-aoSmith.jpg",
+            "contacto": "Miguel Perez"
+        },
+        {
+            "id": 2,
+            "nombre": "Blue Clean",
+            "ciudad": "Guayaquil",
+            "telefono": "18003145",
+            "imagen": "../public/marcas/logo-blueClean.jpg",
+            "contacto": "Xavier Porras"
+        },
+        {
+            "id": 3,
+            "nombre": "Bossini",
+            "ciudad": "Guayaquil",
+            "telefono": "18009547",
+            "imagen": "../public/marcas/logo-bossini.jpg",
+            "contacto": "Karen Ponce"
+        },
+        {
+            "id": 4,
+            "nombre": "Brady",
+            "ciudad": "Quito",
+            "telefono": "18009752",
+            "imagen": "../public/marcas/logo-brady.jpg",
+            "contacto": "Juan Carpo"
+        },
+        {
+            "id": 5,
+            "nombre": "Clarus",
+            "ciudad": "Guayaquil",
+            "telefono": "18009652",
+            "imagen": "../public/marcas/logo-clarus.jpg",
+            "contacto": "Sofia Mora"
+        },
+        {
+            "id": 6,
+            "nombre": "DAB",
+            "ciudad": "Guayaquil",
+            "telefono": "18001425",
+            "imagen": "../public/marcas/logo-dab.jpg",
+            "contacto": "Karla Palacios"
+        },
+        {
+            "id": 7,
+            "nombre": "DG Flow",
+            "ciudad": "Cuenca",
+            "telefono": "18009452",
+            "imagen": "../public/marcas/logo-dgflow.jpg",
+            "contacto": "Malena Parra"
+        },
+        {
+            "id": 8,
+            "nombre": "Ecosmart",
+            "ciudad": "Guayaquil",
+            "telefono": "18001265",
+            "imagen": "../public/marcas/logo-ecosmart.jpg",
+            "contacto": "Carlos Mendez"
+        },
+        {
+            "id": 9,
+            "nombre": "Edesa",
+            "ciudad": "Quito",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/logo-edesa.jpg",
+            "contacto": "David Rodriguez"
+        },
+        {
+            "id": 10,
+            "nombre": "FW",
+            "ciudad": "Guayaquil",
+            "telefono": "1800693",
+            "imagen": "../public/marcas/logo-fw.jpg",
+            "contacto": "Mercedes Garcia"
+        },
+        {
+            "id": 11,
+            "nombre": "Industrial Air",
+            "ciudad": "Quito",
+            "telefono": "18003542",
+            "imagen": "../public/marcas/logo-industrialAir.jpg",
+            "contacto": "Debora Bolaños"
+        },
+        {
+            "id": 12,
+            "nombre": "Pearl",
+            "ciudad": "Guayaquil",
+            "telefono": "18004516",
+            "imagen": "../public/marcas/logo-pearl.jpg",
+            "contacto": "Carmen Pelayo"
+        },
+        {
+            "id": 13,
+            "nombre": "Pedrollo",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/logo-pedrollo.jpg",
+            "contacto": "Mercedes Gomez"
+        },
+        {
+            "id": 14,
+            "nombre": "PTK",
+            "ciudad": "Guayaquil",
+            "telefono": "18007541",
+            "imagen": "../public/marcas/logo-ptk.jpg",
+            "contacto": "Julian Carpio"
+        },
+        {
+            "id": 15,
+            "nombre": "Rotoplas",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/logo-rotoplas.jpg",
+            "contacto": "David Rodriguez"
+        },
+        {
+            "id": 16,
+            "nombre": "Schneider",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/logo-scneider.jpg",
+            "contacto": "David Rodriguez"
+        },
+        {
+            "id": 17,
+            "nombre": "Tramontina",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/logo-tramontina.jpg",
+            "contacto": "David Rodriguez"
+        },
+        {
+            "id": 18,
+            "nombre": "Zilmet",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/logo-zilmet.jpg",
+            "contacto": "David Rodriguez"
+        },
+        {
+            "id": 19,
+            "nombre": "Zoeller",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/logo-zoeller.jpg",
+            "contacto": "David Rodriguez"
+        },
+        {
+            "id": 20,
+            "nombre": "MTD",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/logoMTD.png",
+            "contacto": "David Rodriguez"
+        },
+        {
+            "id": 21,
+            "nombre": "Varem",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/slider-varem.png",
+            "contacto": "David Rodriguez"
+        },
+        {
+            "id": 22,
+            "nombre": "WEQ",
+            "ciudad": "Guayaquil",
+            "telefono": "18001458",
+            "imagen": "../public/marcas/slider-weq.png",
+            "contacto": "David Rodriguez"
+        }
+    ]
+}

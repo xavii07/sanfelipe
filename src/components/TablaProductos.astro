@@ -1,0 +1,95 @@
+---
+import Navigation from "./Navigation.astro";
+
+const { productos } = Astro.props;
+---
+
+<table
+  class="table table-dark text-center table-responsive table-hover mt-4 table-borderless"
+>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>CODIGO</th>
+      <th>NOMBRE</th>
+      <th>DESCRIPCION</th>
+      <th>CANTIDAD</th>
+      <th>PRECIO</th>
+      <th>TOTAL</th>
+      <th>ACCIONES</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      productos.map((producto, index) => (
+        <tr>
+          <td>{index + 1}</td>
+          <td>{producto.codigo}</td>
+          <td>{producto.nombre}</td>
+          <td>{producto.descripcion}</td>
+          <td>{producto.cantidad}</td>
+          <td>${producto.precio_unitario}</td>
+          <td>${producto.precio_total}</td>
+          <td>
+            {/*
+             */}
+            <div class="dropend">
+              <button
+                class="btn btn-sm btn-dark "
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ....
+              </button>
+              <ul class="dropdown-menu bg-dark">
+                <li class="li_enlace">
+                  <a href="" class="ps-1 text-white w-100">
+                    <i
+                      class="bi bi-archive-fill pe-2"
+                      style="font-size: 1rem; color: #d20962;"
+                    />
+                    Eliminar
+                  </a>
+                </li>
+                <li class="li_enlace">
+                  <a href="/editar_producto" class="ps-1 text-white w-100">
+                    <i
+                      class="bi bi-pencil-square w-100 pe-2"
+                      style="font-size: 1rem; color: #00bce4;"
+                    />
+                    Editar
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+<Navigation />
+
+<style>
+  table {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+  }
+  td {
+    height: 3rem;
+    vertical-align: middle;
+  }
+  thead tr th {
+    background-color: #ffcaa0 !important;
+    height: 3rem;
+    vertical-align: middle;
+    color: #263135;
+  }
+
+  .li_enlace:hover {
+    background-color: #263135;
+  }
+</style>

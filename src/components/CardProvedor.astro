@@ -1,0 +1,24 @@
+---
+interface Props {
+  nombre?: string;
+  ciudad?: string;
+  telefono?: string;
+  imagen?: string;
+  contacto?: string;
+}
+const { imagen, nombre, ciudad, contacto, telefono } = Astro.props;
+---
+
+<div class="card" style="width: 9rem;">
+  <img src={imagen} class="card-img-top" alt={nombre} />
+  <div class="card-body">
+    <small class="card-text text-dark fw-bold d-block">{nombre}</small>
+    <small class="card-text text-dark">{ciudad}</small>
+    <small class="card-text text-dark">{telefono}</small>
+    <small class="card-text text-dark">{contacto}</small>
+  </div>
+  <div class="d-flex gap-2 mb-2 justify-content-center">
+    <i class="bi bi-whatsapp" style="color: green;"></i>
+    <i class="bi bi-telephone-fill" style="color:purple;"></i>
+  </div>
+</div>

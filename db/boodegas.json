@@ -1,0 +1,84 @@
+{
+    "bodegas": [
+        {
+            "id": 1,
+            "nombre": "La Matriz",
+            "ciudad": "Latacunga",
+            "telefono": "27164789",
+            "direccion": "Av la republica 123 frente al parqueadero",
+            "imagen": "../public/ferreteria1.jpg",
+            "atencion_semana": "08h30 a 17h00",
+            "atencion_fin": "10h00 a 16h00"
+        },
+        {
+            "id": 2,
+            "nombre": "Eloy Alfaro",
+            "ciudad": "Latacunga",
+            "telefono": "27168954",
+            "direccion": "Autopista Gral. Rumiñahui, frente al C. C. San Luis Shopping",
+            "imagen": "../public/ferreteria2.jpg",
+            "atencion_semana": "08h30 a 17h00",
+            "atencion_fin": "10h00 a 16h00"
+        },
+        {
+            "id": 3,
+            "nombre": "Ignacio Flores",
+            "ciudad": "Latacunga",
+            "telefono": "27163654",
+            "direccion": "Vía Interoceánica E5-67 frente a la entrada a La Cerámica",
+            "imagen": "../public/ferreteria3.jpg",
+            "atencion_semana": "08h30 a 17h00",
+            "atencion_fin": "10h00 a 16h00"
+        },
+        {
+            "id": 4,
+            "nombre": "San Buenaventura",
+            "ciudad": "Latacunga",
+            "telefono": "27162547",
+            "direccion": "Av. Agustín Freire e Isidro Ayora diagonal al monumento a Roldós",
+            "imagen": "../public/ferreteria4.jpg",
+            "atencion_semana": "08h30 a 17h00",
+            "atencion_fin": "10h00 a 16h00"
+        },
+        {
+            "id": 5,
+            "nombre": "Juan Montalvo",
+            "ciudad": "Latacunga",
+            "telefono": "27169654",
+            "direccion": "Calle 24 s/n y Av. Flavio Reyes (C.C. Manicentro)",
+            "imagen": "../public/ferreteria5.jpg",
+            "atencion_semana": "08h30 a 17h00",
+            "atencion_fin": "10h00 a 16h00"
+        },
+        {
+            "id": 6,
+            "nombre": "Once de Noviembre",
+            "ciudad": "Latacunga",
+            "telefono": "27165412",
+            "direccion": "Vía a Samborondón, entrada a Ciudad Celeste.",
+            "imagen": "../public/ferreteria6.jpg",
+            "atencion_semana": "08h30 a 17h00",
+            "atencion_fin": "10h00 a 16h00"
+        },
+        {
+            "id": 7,
+            "nombre": "Guaytacama",
+            "ciudad": "Latacunga",
+            "telefono": "27168541",
+            "direccion": "Av. Esmeraldas y Río Pastaza, junto a Gran Aki.",
+            "imagen": "../public/ferreteria7.jpg",
+            "atencion_semana": "08h30 a 17h00",
+            "atencion_fin": "10h00 a 16h00"
+        },
+        {
+            "id": 8,
+            "nombre": "Aláquez",
+            "ciudad": "Latacunga",
+            "telefono": "27167845",
+            "direccion": "Av. Constitución y Av. Juan Tanca Marengo",
+            "imagen": "../public/ferreteria8.jpg",
+            "atencion_semana": "08h30 a 17h00",
+            "atencion_fin": "10h00 a 16h00"
+        }
+    ]
+}

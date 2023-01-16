@@ -1,0 +1,26 @@
+---
+interface Props {
+  total: number;
+  nombre: string;
+  icono: string;
+}
+const { total, nombre, icono } = Astro.props;
+---
+
+<div class="card mb-4 bg-dark shadow-lg rounded">
+  <div class="card-body d-flex align-items-center justify-content-between">
+    <div>
+      <h2 class="card-title numero">{total}</h2>
+      <p class="text-sm">{nombre}</p>
+    </div>
+    <div>
+      <i class={`bi bi-${icono}`} style="font-size: 2rem; color: #FFCAA0;"></i>
+    </div>
+  </div>
+</div>
+<style>
+  .numero {
+    color: #e94256;
+    font-size: 3rem;
+  }
+</style>

@@ -1,0 +1,32 @@
+---
+interface Props {
+  placeholder: string;
+}
+
+const { placeholder } = Astro.props;
+---
+
+<form class="d-flex" role="search">
+  <div class="input-group mb-3">
+    <span class="input-group-text search" id="basic-addon1">
+      <i class="bi bi-search" style="color: white;"></i>
+    </span>
+    <input type="text" class="form-control" placeholder={placeholder} />
+    <button class="btn boton" type="button">Buscar</button>
+  </div>
+</form>
+
+<style>
+  .search {
+    background-color: #e94256;
+    border: none;
+  }
+  .boton {
+    background-color: #e94256;
+    color: aliceblue;
+    font-weight: 700;
+  }
+  .boton:hover {
+    background-color: #e94255c0;
+  }
+</style>
