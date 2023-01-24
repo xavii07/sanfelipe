@@ -89,33 +89,6 @@
             "cantidad": 3,
             "precio_unitario": 400,
             "precio_total": 1200
-        },
-        {
-            "id": 11,
-            "codigo": "PRO3275",
-            "nombre": "Lampara de mesa",
-            "descripcion": "Lampara de mesa de madera",
-            "cantidad": 10,
-            "precio_unitario": 50,
-            "precio_total": 500
-        },
-        {
-            "id": 12,
-            "codigo": "PRO3276",
-            "nombre": "Lampara de pie",
-            "descripcion": "Lampara de pie de madera",
-            "cantidad": 5,
-            "precio_unitario": 100,
-            "precio_total": 500
-        },
-        {
-            "id": 13,
-            "codigo": "PRO3226",
-            "nombre": "Tomacorriente",
-            "descripcion": "Tomacorriente de 1 polo",
-            "cantidad": 500,
-            "precio_unitario": 1,
-            "precio_total": 500
         }
     ]
 }

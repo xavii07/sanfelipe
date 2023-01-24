@@ -1,0 +1,50 @@
+---
+import Aside from "../components/Aside.astro";
+import FormPedido from "../components/FormPedido.astro";
+import FormProducto from "../components/FormProducto.astro";
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<Layout title="San Felipe | Editar Pedido">
+  <div class="container-fluid vh-100">
+    <div class="row h-100">
+      <div class="col-2 aside">
+        <Aside />
+      </div>
+      <div class="col-10 main">
+        <Nav />
+        <div class="container">
+          <div class="row">
+            <div class="col-7 mx-auto">
+              <h3 class="text-center py-4">Editar Pedido</h3>
+              <FormPedido
+                provedor="Kiwy"
+                boton="Editar Pedido"
+                descripcion="Entrega inmediata"
+                estado="Pendiente"
+                fecha_entrega="2021-09-01"
+                fecha_pedido="2021-09-01"
+                valor_pagar={100000}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .aside {
+        background-color: #232a2c;
+      }
+      .boton {
+        background-color: #e94256;
+        color: aliceblue;
+        font-weight: 700;
+      }
+      .boton:hover {
+        background-color: #e94255c0;
+      }
+    </style>
+  </div>
+</Layout>

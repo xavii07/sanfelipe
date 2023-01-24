@@ -1,0 +1,49 @@
+---
+import Aside from "../components/Aside.astro";
+import FormProducto from "../components/FormProducto.astro";
+import FormProvedor from "../components/FormProvedor.astro";
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<Layout title="San Felipe | Editar Provedor">
+  <div class="container-fluid vh-100">
+    <div class="row h-100">
+      <div class="col-2 aside">
+        <Aside />
+      </div>
+      <div class="col-10 main">
+        <Nav />
+        <div class="container">
+          <div class="row">
+            <div class="col-7 mx-auto">
+              <h3 class="text-center py-4">Editar Producto</h3>
+              <FormProvedor
+                boton="Editar Provedor"
+                nombre="A.O. Smith"
+                ciudad="Guayaquil"
+                contacto="Miguel Perez"
+                telefono="0987654321"
+                imagen="../public/marcas/logo-aoSmith.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .aside {
+        background-color: #232a2c;
+      }
+      .boton {
+        background-color: #e94256;
+        color: aliceblue;
+        font-weight: 700;
+      }
+      .boton:hover {
+        background-color: #e94255c0;
+      }
+    </style>
+  </div>
+</Layout>

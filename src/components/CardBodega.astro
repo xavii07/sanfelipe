@@ -43,6 +43,34 @@ const {
         <i class="bi bi-whatsapp" style="color: green;"></i>
         <i class="bi bi-telephone-fill" style="color:purple;"></i>
       </div>
+      <div class="dropend">
+        <button
+          class="btn btn-sm btn-outline-secondary fw-bold"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          ....
+        </button>
+        <ul class="dropdown-menu bg-dark">
+          <li class="li_enlace">
+            <a href="" class="ps-1 text-white w-100">
+              <i
+                class="bi bi-archive-fill pe-2"
+                style="font-size: 1rem; color: #d20962;"></i>
+              Eliminar
+            </a>
+          </li>
+          <li class="li_enlace">
+            <a href="/editar_bodega" class="ps-1 text-white w-100">
+              <i
+                class="bi bi-pencil-square w-100 pe-2"
+                style="font-size: 1rem; color: #00bce4;"></i>
+              Editar
+            </a>
+          </li>
+        </ul>
+      </div>
     </li>
 
     <li class="list-group-item fw-bold">
@@ -57,3 +85,11 @@ const {
     </li>
   </ul>
 </div>
+<style>
+  a {
+    text-decoration: none;
+  }
+  .li_enlace:hover {
+    background-color: #263135;
+  }
+</style>

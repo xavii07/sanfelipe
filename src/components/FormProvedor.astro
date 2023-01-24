@@ -1,0 +1,110 @@
+---
+interface Props {
+  nombre?: string;
+  ciudad?: string;
+  telefono?: string;
+  imagen?: string;
+  contacto?: string;
+  boton?: string;
+}
+
+const {
+  nombre,
+  ciudad,
+  telefono,
+  imagen,
+  contacto,
+  boton = "Guardar Provedor",
+} = Astro.props;
+---
+
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label">Nombre Provedor</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationCustom01"
+      placeholder="Kiwy S.A"
+      autocomplete="off"
+      value={nombre}
+      required
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Ciudad</label>
+    <input
+      autocomplete="off"
+      type="text"
+      class="form-control"
+      id="validationCustom02"
+      placeholder="Quito"
+      value={ciudad}
+      required
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Persona Contacto</label>
+    <input
+      autocomplete="off"
+      type="text"
+      class="form-control"
+      id="validationCustom02"
+      placeholder="Carlos Perez"
+      value={contacto}
+      required
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label">Telefono</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationCustom01"
+      placeholder="2716-0000"
+      autocomplete="off"
+      value={telefono}
+      required
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Imagen</label>
+    {
+      imagen ? (
+        <div>
+          <img src={imagen} width="160" height="160" class="mb-2" />
+          <input
+            type="file"
+            value={imagen}
+            class="form-control"
+            id="validationCustom02"
+            accept=".jpg, .jpeg, .png"
+            required
+          />
+        </div>
+      ) : (
+        <input
+          type="file"
+          accept=".jpg, .jpeg, .png"
+          class="form-control"
+          id="validationCustom02"
+          required
+        />
+      )
+    }
+  </div>
+  <div class="col-8 mt-4">
+    <a href="/provedores" class="btn boton w-100 mt-4" type="submit">{boton}</a>
+  </div>
+</form>
+
+<style>
+  .boton {
+    background-color: #e94256;
+    color: aliceblue;
+    font-weight: 700;
+  }
+  .boton:hover {
+    background-color: #e94255c0;
+  }
+</style>

@@ -1,0 +1,74 @@
+{
+    "pedidos": [
+        {
+            "id": 1,
+            "provedor": "Fornecedor 1",
+            "nombre_encargado": "Juan Perez",
+            "fecha_pedido": "2023-01-02",
+            "fecha_entrega": "2023-01-08",
+            "valor_pagar": 100.00,
+            "estado": "Pendiente",
+            "descripcion": "Pedido de prueba"
+        },
+        {
+            "id": 2,
+            "provedor": "Blue Clean",
+            "nombre_encargado": "Maria Lopez",
+            "fecha_pedido": "2023-01-03",
+            "fecha_entrega": "2023-01-08",
+            "valor_pagar": 50.00,
+            "estado": "Recibido",
+            "descripcion": "Pedido de prueba"
+        },
+        {
+            "id": 3,
+            "provedor": "Bossini",
+            "nombre_encargado": "Karen Gonzales",
+            "fecha_pedido": "2023-01-02",
+            "fecha_entrega": "2023-01-08",
+            "valor_pagar": 300.00,
+            "estado": "Recibido",
+            "descripcion": "Pedido de prueba"
+        },
+        {
+            "id": 7,
+            "provedor": "Kiwy",
+            "nombre_encargado": "Marlene Pacheco",
+            "fecha_pedido": "2023-01-05",
+            "fecha_entrega": "2023-01-08",
+            "valor_pagar": 700.00,
+            "estado": "Cancelado",
+            "descripcion": "Pedido de prueba"
+        },
+        {
+            "id": 4,
+            "provedor": "Brady",
+            "nombre_encargado": "Dario Porrata",
+            "fecha_pedido": "2023-01-01",
+            "fecha_entrega": "2023-01-08",
+            "valor_pagar": 150.00,
+            "estado": "Pendiente",
+            "descripcion": "Pedido de prueba"
+        },
+        {
+            "id": 5,
+            "provedor": "Clarus",
+            "nombre_encargado": "Jefferson Martinez",
+            "fecha_pedido": "2023-01-02",
+            "fecha_entrega": "2023-01-08",
+            "valor_pagar": 60.00,
+            "estado": "Recibido",
+            "descripcion": "Pedido de prueba"
+        },
+        {
+            "id": 6,
+            "provedor": "DG Flow",
+            "nombre_encargado": "Camila Rojas",
+            "fecha_pedido": "2023-01-04",
+            "fecha_entrega": "2023-01-08",
+            "valor_pagar": 55.00,
+            "estado": "Pendiente",
+            "descripcion": "Pedido de prueba"
+        }
+    ]
+}

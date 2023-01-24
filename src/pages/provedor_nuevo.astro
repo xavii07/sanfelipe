@@ -1,0 +1,41 @@
+---
+import Aside from "../components/Aside.astro";
+import FormProvedor from "../components/FormProvedor.astro";
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<Layout title="San Felipe | Nuevo Provedor">
+  <div class="container-fluid vh-100">
+    <div class="row h-100">
+      <div class="col-2 aside">
+        <Aside />
+      </div>
+      <div class="col-10 main">
+        <Nav />
+        <div class="container">
+          <div class="row">
+            <div class="col-7 mx-auto">
+              <h3 class="text-center py-4">Agregar Provedor</h3>
+              <FormProvedor />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .aside {
+        background-color: #232a2c;
+      }
+      .boton {
+        background-color: #e94256;
+        color: aliceblue;
+        font-weight: 700;
+      }
+      .boton:hover {
+        background-color: #e94255c0;
+      }
+    </style>
+  </div>
+</Layout>

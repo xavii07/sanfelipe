@@ -1,0 +1,68 @@
+---
+const { productos } = Astro.props;
+---
+
+<table
+  class="table table-dark text-center table-responsive table-hover mt-4 table-borderless"
+>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>CODIGO</th>
+      <th>NOMBRE</th>
+      <th>DESCRIPCION</th>
+      <th>CANTIDAD</th>
+      <th>TOTAL</th>
+      <th>ACCIONES</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      productos.map((producto, index) => (
+        <tr>
+          <td>{index + 1}</td>
+          <td>{producto.codigo}</td>
+          <td>{producto.nombre}</td>
+          <td>{producto.descripcion}</td>
+          <td>{producto.cantidad}</td>
+          <td>$ {producto.precio_total}</td>
+          <td class="d-flex gap-2 fw-bold">
+            <button class="border-0 btn btn-success btn-sm">+</button>
+            <button class="border-0 btn btn-warning btn-sm">-</button>
+            <button class="border-0 btn btn-danger btn-sm">X</button>
+          </td>
+        </tr>
+      ))
+    }
+    <tr>
+      <td colspan="3" style="height: 100%;background-color: #e94256;"
+        ><div style="background-color: #e94256;height:100%;font-weight: bold;">
+          TOTAL: $2500
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  table {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+  }
+  td {
+    height: 3rem;
+    vertical-align: middle;
+  }
+  thead tr th {
+    background-color: #ffcaa0 !important;
+    height: 3rem;
+    vertical-align: middle;
+    color: #263135;
+  }
+
+  .li_enlace:hover {
+    background-color: #263135;
+  }
+</style>

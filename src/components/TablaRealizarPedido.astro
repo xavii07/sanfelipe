@@ -1,0 +1,60 @@
+---
+import Navigation from "./Navigation.astro";
+
+const { productos } = Astro.props;
+const productosN = productos.filter((pro) => pro.id % 2 === 0);
+---
+
+<table
+  class="table table-dark text-center table-responsive table-hover mt-4 table-borderless"
+>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>CODIGO</th>
+      <th>NOMBRE</th>
+      <th>DESCRIPCION</th>
+      <th>AGREGAR</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      productosN.map((producto, index) => (
+        <tr>
+          <td>{index + 1}</td>
+          <td>{producto.codigo}</td>
+          <td>{producto.nombre}</td>
+          <td>{producto.descripcion}</td>
+          <td class="d-flex gap-1">
+            <input style="width: 90px;" type="number" class="form-control" />
+            <button class="btn btn-success text-sm btn-sm">Agregar</button>
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+<Navigation />
+
+<style>
+  table {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+  }
+  td {
+    height: 3rem;
+    vertical-align: middle;
+  }
+  thead tr th {
+    background-color: #ffcaa0 !important;
+    height: 3rem;
+    vertical-align: middle;
+    color: #263135;
+  }
+
+  .li_enlace:hover {
+    background-color: #263135;
+  }
+</style>

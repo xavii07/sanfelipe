@@ -1,11 +1,13 @@
 ---
 import Layout from "../components/Layout.astro";
 import Nav from "../components/Nav.astro";
+import { pedidos } from "../../db/pedidos.json";
 import Aside from "../components/Aside.astro";
-import Card from "../components/Card.astro";
+import Search from "../components/Search.astro";
+import TablaPedidos from "../components/TablaPedidos.astro";
 ---
 
-<Layout title="San Felipe | Productos">
+<Layout title="San Felipe | Pedidos">
   <div class="container-fluid vh-100">
     <div class="row h-100">
       <div class="col-2 aside">
@@ -14,19 +16,15 @@ import Card from "../components/Card.astro";
       <div class="col-10 main">
         <Nav />
         <div class="container">
-          <h1 class="text-center py-4">Bienvenido San Felipe</h1>
-          <div class="row my-4 w-75 mx-auto">
-            <div>
-              <h5 class="mb-5">Lunes, 12 de Julio de 2021</h5>
+          <h1 class="text-center py-4">Pedidos</h1>
+          <div class="row my-4">
+            <div class="col-4">
+              <Search placeholder="Buscar Pedido" />
             </div>
-            <div class="col-6 mx-auto">
-              <Card icono="tools" nombre="Productos" total={520} />
-              <Card icono="easel3" nombre="Bodegas" total={10} />
+            <div class="col-8 d-flex h-100 justify-content-end">
+              <a href="/pedido_nuevo" class="btn boton">Agregar Nuevo +</a>
             </div>
-            <div class="col-6 mx-auto">
-              <Card icono="truck" nombre="Proveedores" total={56} />
-              <Card icono="bag-check-fill" nombre="Pedidos hoy..." total={5} />
-            </div>
+            <TablaPedidos pedidos={pedidos} />
           </div>
         </div>
       </div>

@@ -1,0 +1,102 @@
+---
+import { provedores } from "../../db/provedores.json";
+import Search from "./Search.astro";
+import { productos } from "../../db/productos.json";
+import TablaRealizarPedido from "./TablaRealizarPedido.astro";
+import TablaDetallePedido from "./TablaDetallePedido.astro";
+interface Props {
+  provedor?: string;
+  fecha_pedido?: string;
+  fecha_entrega?: string;
+  valor_pagar?: number;
+  estado?: string;
+  descripcion?: string;
+  boton?: string;
+}
+
+const {
+  provedor,
+  fecha_entrega,
+  estado,
+  descripcion,
+  boton = "Guardar Pedido",
+} = Astro.props;
+---
+
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label">Nombre Provedor</label>
+    <select name="validationCustom01" class="form-control">
+      {provedor && <option value={provedor}>{provedor}</option>}
+      <option value="">--Selecciona Provedor--</option>
+      {
+        provedores.map((provedor) => (
+          <option value={provedor.id}>{provedor.nombre}</option>
+        ))
+      }
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Persona Encargada</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationCustom02"
+      value="Eras Salvador"
+      disabled
+    />
+  </div>
+  <div class="col-md-12">
+    <label for="validationCustom03" class="form-label">Descripcion</label>
+    <input
+      autocomplete="off"
+      type="text"
+      class="form-control"
+      id="validationCustom03"
+      value={descripcion}
+      required
+    />
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom04" class="form-label">Fecha Entrega</label>
+    <input
+      type="date"
+      class="form-control"
+      id="validationCustom05"
+      required
+      value={fecha_entrega}
+    />
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Estado Entrega</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationCustom01"
+      disabled
+      value="Pendiente"
+      value={estado}
+    />
+  </div>
+  <Search placeholder="Buscar Producto" />
+  <TablaRealizarPedido productos={productos} />
+
+  <h3 class="mt-5">Productos Agregados</h3>
+  <TablaDetallePedido productos={productos} />
+  <div class="col-8 mt-4">
+    <a href="/pedidos" class="btn boton w-100 mt-4 mb-4" type="submit"
+      >{boton}</a
+    >
+  </div>
+</form>
+
+<style>
+  .boton {
+    background-color: #e94256;
+    color: aliceblue;
+    font-weight: 700;
+  }
+  .boton:hover {
+    background-color: #e94255c0;
+  }
+</style>

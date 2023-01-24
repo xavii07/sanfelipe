@@ -1,0 +1,109 @@
+---
+import Navigation from "./Navigation.astro";
+
+const { pedidos } = Astro.props;
+---
+
+<table
+  class="table table-dark text-center table-responsive table-hover mt-4 table-borderless"
+>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>PROVEDOR</th>
+      <th>NOMBRE ENCARGADO</th>
+      <th>DESCRIPCION</th>
+      <th>FECHA PEDIDO</th>
+      <th>FECHA ENTREGA</th>
+      <th>TOTAL</th>
+      <th>ESTADO</th>
+      <th>ACCIONES</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      pedidos.map((pedido, index) => (
+        <tr>
+          <td>{index + 1}</td>
+          <td>{pedido.provedor}</td>
+          <td>{pedido.nombre_encargado}</td>
+          <td>{pedido.descripcion}</td>
+          <td>{pedido.fecha_pedido}</td>
+          <td>{pedido.fecha_entrega}</td>
+          <td>$ {pedido.valor_pagar}</td>
+          {pedido.estado === "Pendiente" ? (
+            <td>
+              <span class="badge bg-warning">{pedido.estado}</span>
+            </td>
+          ) : pedido.estado === "Recibido" ? (
+            <td>
+              <span class="badge bg-success">{pedido.estado}</span>
+            </td>
+          ) : (
+            <td>
+              <span class="badge bg-danger">{pedido.estado}</span>
+            </td>
+          )}
+          <td>
+            {/*
+             */}
+            <div class="dropend">
+              <button
+                class="btn btn-sm btn-dark "
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ....
+              </button>
+              <ul class="dropdown-menu bg-dark">
+                <li class="li_enlace">
+                  <a href="" class="ps-1 text-white w-100">
+                    <i
+                      class="bi bi-archive-fill pe-2"
+                      style="font-size: 1rem; color: #d20962;"
+                    />
+                    Eliminar
+                  </a>
+                </li>
+                <li class="li_enlace">
+                  <a href="/editar_pedido" class="ps-1 text-white w-100">
+                    <i
+                      class="bi bi-pencil-square w-100 pe-2"
+                      style="font-size: 1rem; color: #00bce4;"
+                    />
+                    Editar
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+<Navigation />
+
+<style>
+  table {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+  }
+  td {
+    height: 3rem;
+    vertical-align: middle;
+  }
+  thead tr th {
+    background-color: #ffcaa0 !important;
+    height: 3rem;
+    vertical-align: middle;
+    color: #263135;
+  }
+
+  .li_enlace:hover {
+    background-color: #263135;
+  }
+</style>
